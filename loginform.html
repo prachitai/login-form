@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=10cm, height=30cm, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 350px;
+            text-align: center;
+            position: relative;
+        }
+
+        .background-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-color: #8fe4ff;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            z-index: 1;
+        }
+
+        .login-header {
+            margin-top: 180px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .login-header h1 {
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        .login-header .underline {
+            width: 60px;
+            height: 4px;
+            background-color: #8fe4ff;
+            margin: 10px auto;
+        }
+
+        .login-form {
+            background-color: #e0f8ff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .underline {
+            width: 50px;
+            height: 3px;
+            background-color: #8fe4ff;
+            margin: 5px auto 15px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 35px;
+            font-size: 1em;
+            border: none;
+            border-bottom: 1px solid #000;
+            background: transparent;
+        }
+
+        .input-group input:focus {
+            outline: none;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            color: #000;
+        }
+
+        .forgot-password {
+            display: block;
+            font-size: 0.9em;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #8fe4ff;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #6dcfea;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-shape"></div>
+        <div class="login-header">
+            <h1>Login</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="login-form">
+            <form>
+                <div class="input-group">
+                    <i>&#128100;</i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <i>&#128274;</i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
